@@ -1,0 +1,40 @@
+body{
+    display: flex;
+    height: fullscreen;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#board-container{ 
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    grid-template-rows: repeat(3, 200px);
+}
+
+.game-square{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: red;
+    border: 2px solid black;
+    font-size: 72px;
+}
+
+.game-square:hover{
+    background-color: tomato;
+}
+
+#player{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 100px;
+    width: 300px;
+    margin: 100px;
+
+    background-color: lightblue;
+    color: black;
+    
+}
